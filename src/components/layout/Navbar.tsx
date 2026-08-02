@@ -3,13 +3,16 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Phone, Menu, X } from "lucide-react";
+import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { AnimatePresence } from "framer-motion";
+import { NavbarServicesSlider } from "@/components/layout/NavbarServicesSlider";
 
 export function Navbar() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,14 +29,17 @@ export function Navbar() {
   const navItems = [
     { label: "HOME", href: "/" },
     { label: "ABOUT US", href: "/about" },
-    { label: "SERVICES", href: "/services" },
+    { label: "SERVICES", href: "/services", hasDropdown: true },
     { label: "PROJECTS", href: "/projects" },
     { label: "EQUIPMENT", href: "/#machinery" },
     { label: "CONTACT US", href: "/contact" },
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 w-full select-none transition-all duration-300 bg-white lg:bg-transparent border-b border-slate-200 lg:border-none shadow-sm lg:shadow-none">
+    <header
+      onMouseLeave={() => setServicesOpen(false)}
+      className="fixed top-0 left-0 right-0 z-50 w-full select-none transition-all duration-300 bg-white lg:bg-transparent border-b border-slate-200 lg:border-none shadow-sm lg:shadow-none"
+    >
       
       {/* 
         FLUSH TOP NAVBAR CONTAINER
@@ -96,6 +102,30 @@ export function Navbar() {
                   ? false
                   : pathname.startsWith(item.href);
 
+              if (item.hasDropdown) {
+                return (
+                  <div
+                    key={item.label}
+                    onMouseEnter={() => setServicesOpen(true)}
+                    className="relative flex items-center gap-1 cursor-pointer py-5"
+                  >
+                    <Link
+                      href={item.href}
+                      className={cn(
+                        "relative py-1.5 transition-colors hover:text-[#04509A] flex items-center gap-1",
+                        isActive || servicesOpen ? "text-[#04509A]" : "text-[#3B3D42]"
+                      )}
+                    >
+                      <span>{item.label}</span>
+                      <ChevronDown className={cn("w-3.5 h-3.5 transition-transform duration-200", servicesOpen ? "rotate-180 text-[#04509A]" : "text-slate-400")} />
+                      {(isActive || servicesOpen) && (
+                        <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-[#04509A] rounded-full" />
+                      )}
+                    </Link>
+                  </div>
+                );
+              }
+
               return (
                 <Link
                   key={item.label}
@@ -137,6 +167,15 @@ export function Navbar() {
         </button>
 
       </div>
+
+      {/* Services Dropdown Mega-Menu Slider */}
+      <AnimatePresence>
+        {servicesOpen && (
+          <div onMouseEnter={() => setServicesOpen(true)}>
+            <NavbarServicesSlider onClose={() => setServicesOpen(false)} />
+          </div>
+        )}
+      </AnimatePresence>
 
       {/* Mobile Drawer */}
       {mobileOpen && (
