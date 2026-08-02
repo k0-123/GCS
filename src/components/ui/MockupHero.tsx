@@ -67,7 +67,7 @@ export function MockupHero() {
       {/* 
         3. HERO LEFT TEXT CONTENT
       */}
-      <div className="relative z-20 max-w-[1440px] mx-auto w-full px-4 sm:px-8 lg:px-14 my-auto pt-6 sm:pt-10 lg:pt-10 pb-6">
+      <div className="relative z-40 max-w-[1440px] mx-auto w-full px-4 sm:px-8 lg:px-14 my-auto pt-6 sm:pt-10 lg:pt-10 pb-6 pointer-events-auto">
         <div className="max-w-xl lg:max-w-lg bg-white/90 lg:bg-transparent backdrop-blur-md lg:backdrop-blur-none p-5 sm:p-7 lg:p-0 rounded-2xl lg:rounded-none border border-slate-200/80 lg:border-none shadow-xl lg:shadow-none">
 
           {/* Eyebrow Label */}
@@ -96,13 +96,13 @@ export function MockupHero() {
             Precision Laser Screed Concrete Flooring for Industrial, Commercial &amp; Warehousing Facilities.
           </p>
 
-          {/* Hero Action Buttons */}
-          <div className="flex flex-wrap items-center gap-3">
-            <Button href="/services" size="default" className="bg-[#04509A] hover:bg-[#003E99] text-white font-bold px-5 py-3 rounded-lg shadow-md">
+          {/* Hero Action Buttons (z-50 pointer-events-auto ensures 100% clickability) */}
+          <div className="relative z-50 pointer-events-auto flex flex-wrap items-center gap-3">
+            <Button href="/services" size="default" className="bg-[#04509A] hover:bg-[#003E99] text-white font-bold px-5 py-3 rounded-lg shadow-md cursor-pointer relative z-50">
               Explore Services
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
-            <Button href="tel:+919772586211" variant="secondary" size="default" className="border-2 border-[#04509A] text-[#04509A] hover:bg-[#04509A] hover:text-white font-bold px-4 py-3 rounded-lg">
+            <Button href="tel:+919772586211" variant="secondary" size="default" className="border-2 border-[#04509A] text-[#04509A] hover:bg-[#04509A] hover:text-white font-bold px-4 py-3 rounded-lg cursor-pointer relative z-50">
               Call: +91 9772586211
             </Button>
           </div>
