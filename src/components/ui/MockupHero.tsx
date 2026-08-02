@@ -44,12 +44,12 @@ export function MockupHero() {
       */}
       <div className="hidden lg:block absolute inset-0 z-10 pointer-events-none overflow-hidden">
         <svg viewBox="0 0 1000 700" preserveAspectRatio="none" className="w-full h-full">
-          {/* White canvas cutaway */}
-          <path d="M 0 0 L 260 0 L 0 450 Z" fill="white" />
+          {/* White canvas cutaway (Expanded to 340 to keep text 100% on white) */}
+          <path d="M 0 0 L 340 0 L 0 520 Z" fill="white" />
 
           {/* Slanted Royal Blue Ribbon starting at navbar bottom line (y=64) */}
           <path
-            d="M 223 64 L 268 64 L 218 150 Q 208 165 178 165 L 164.67 165 L 223 64 Z"
+            d="M 310 64 L 355 64 L 305 150 Q 295 165 265 165 L 251.67 165 L 310 64 Z"
             fill="#04509A"
           />
         </svg>
