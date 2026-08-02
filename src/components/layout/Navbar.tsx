@@ -33,20 +33,20 @@ export function Navbar() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 w-full select-none transition-all duration-300">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full select-none transition-all duration-300 bg-white lg:bg-transparent border-b border-slate-200 lg:border-none shadow-sm lg:shadow-none">
       
       {/* 
         FLUSH TOP NAVBAR CONTAINER
       */}
       <div
         className={cn(
-          "relative w-full flex items-center justify-between transition-all duration-300 ease-in-out bg-transparent",
+          "relative w-full flex items-center justify-between transition-all duration-300 ease-in-out bg-white lg:bg-transparent px-4 sm:px-6 md:px-8",
           scrolled ? "h-14 sm:h-16" : "h-16 sm:h-18"
         )}
       >
         
         {/* 1. TOP-LEFT WHITE LOGO CONTAINER */}
-        <div className="relative z-30 bg-white h-full px-4 sm:px-6 md:px-8 flex items-center gap-3 border-b border-slate-200 shrink-0">
+        <div className="relative z-30 bg-white h-full flex items-center gap-3 lg:border-b lg:border-slate-200 shrink-0">
           <Link href="/" className="flex items-center gap-3 group">
             {/* Official GCS High-Res Logo Asset */}
             <div className="h-9 sm:h-11 md:h-12 w-auto flex items-center justify-center">
@@ -69,11 +69,10 @@ export function Navbar() {
         </div>
 
         {/* 
-          SLANTED ROYAL BLUE SHAPE IN NAVBAR
-          (Aligns 100% with hero blue shape so it feels like ONE continuous shape from top-0)
+          SLANTED ROYAL BLUE SHAPE IN NAVBAR (Desktop only)
         */}
         <div className={cn(
-          "absolute top-0 left-0 w-full h-full pointer-events-none z-20 transition-opacity duration-300",
+          "hidden lg:block absolute top-0 left-0 w-full h-full pointer-events-none z-20 transition-opacity duration-300",
           scrolled ? "opacity-0" : "opacity-100"
         )}>
           <svg viewBox="0 0 1000 64" preserveAspectRatio="none" className="w-full h-full">
@@ -84,11 +83,11 @@ export function Navbar() {
           </svg>
         </div>
 
-        {/* 2. WHITE NAVIGATION MENU BAR */}
-        <div className="relative flex-1 h-full flex items-center justify-between bg-white border-b border-slate-200 pl-24 sm:pl-32 md:pl-40 pr-4 sm:pr-8">
+        {/* 2. WHITE NAVIGATION MENU BAR (Desktop) */}
+        <div className="hidden lg:flex relative flex-1 h-full items-center justify-between bg-white border-b border-slate-200 pl-24 sm:pl-32 md:pl-40 pr-4 sm:pr-8">
           
           {/* Navigation Links */}
-          <div className="hidden lg:flex items-center gap-6 xl:gap-9 font-display font-black text-[13px] xl:text-[14px] uppercase tracking-wider text-[#3B3D42] mx-auto">
+          <div className="flex items-center gap-6 xl:gap-9 font-display font-black text-[13px] xl:text-[14px] uppercase tracking-wider text-[#3B3D42] mx-auto">
             {navItems.map((item) => {
               const isActive =
                 item.href === "/"
@@ -116,7 +115,7 @@ export function Navbar() {
           </div>
 
           {/* Right Phone Call Button */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="flex items-center gap-3">
             <a
               href="tel:+919772586211"
               className="inline-flex items-center gap-2.5 bg-[#04509A] hover:bg-[#033d7a] text-white font-display text-[15px] font-bold tracking-wide px-6 py-2.5 rounded-full transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
@@ -128,13 +127,13 @@ export function Navbar() {
 
         </div>
 
-        {/* Mobile Hamburger */}
+        {/* Mobile Hamburger Menu Icon */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="lg:hidden relative z-30 p-2 text-[#3B3D42] hover:text-[#04509A] transition-colors mr-2"
+          className="lg:hidden relative z-30 p-2 text-[#3B3D42] hover:text-[#04509A] bg-transparent hover:bg-slate-100 rounded-lg transition-all focus:outline-none focus:ring-0 active:bg-slate-200"
           aria-label="Toggle Menu"
         >
-          {mobileOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+          {mobileOpen ? <X className="w-7 h-7 text-[#04509A]" /> : <Menu className="w-7 h-7 text-[#3B3D42]" />}
         </button>
 
       </div>
