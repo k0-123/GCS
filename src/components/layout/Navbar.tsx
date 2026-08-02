@@ -42,17 +42,17 @@ export function Navbar() {
     >
       
       {/* 
-        FLUSH TOP NAVBAR CONTAINER
+        FLUSH TOP NAVBAR CONTAINER (Edge-to-edge full width)
       */}
       <div
         className={cn(
-          "relative w-full flex items-center justify-between transition-all duration-300 ease-in-out bg-white lg:bg-transparent px-4 sm:px-6 md:px-8",
+          "relative w-full flex items-center justify-between transition-all duration-300 ease-in-out bg-white lg:bg-transparent px-4 sm:px-6 lg:px-0",
           scrolled ? "h-14 sm:h-16" : "h-16 sm:h-18"
         )}
       >
         
         {/* 1. TOP-LEFT WHITE LOGO CONTAINER */}
-        <div className="relative z-30 bg-white h-full flex items-center gap-3 lg:border-b lg:border-slate-200 shrink-0">
+        <div className="relative z-30 bg-white h-full flex items-center gap-3 lg:border-b lg:border-slate-200 shrink-0 px-4 sm:px-6 lg:px-8">
           <Link href="/" className="flex items-center gap-3 group">
             {/* Official GCS High-Res Logo Asset */}
             <div className="h-9 sm:h-11 md:h-12 w-auto flex items-center justify-center">
@@ -89,8 +89,8 @@ export function Navbar() {
           </svg>
         </div>
 
-        {/* 2. WHITE NAVIGATION MENU BAR (Desktop) */}
-        <div className="hidden lg:flex relative flex-1 h-full items-center justify-between bg-white border-b border-slate-200 pl-24 sm:pl-32 md:pl-40 pr-4 sm:pr-8">
+        {/* 2. WHITE NAVIGATION MENU BAR (Desktop - Full Edge Width) */}
+        <div className="hidden lg:flex relative flex-1 h-full items-center justify-between bg-white border-b border-slate-200 pl-24 sm:pl-32 md:pl-40 pr-6 lg:pr-10 xl:pr-12">
           
           {/* Navigation Links */}
           <div className="flex items-center gap-6 xl:gap-9 font-display font-black text-[13px] xl:text-[14px] uppercase tracking-wider text-[#3B3D42] mx-auto">
