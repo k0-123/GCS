@@ -72,8 +72,8 @@ export function MockupHero() {
 
           {/* Eyebrow Label */}
           <div className="flex items-center gap-2 mb-3 sm:mb-4">
-            <div className="h-[3px] w-8 bg-[#04509A] rounded-full" />
-            <span className="text-[11px] sm:text-[12px] font-mono font-bold uppercase tracking-[0.2em] text-[#04509A]">
+            <div className="h-[3px] w-6 sm:w-8 bg-[#04509A] rounded-full shrink-0" />
+            <span className="text-[11px] sm:text-[12px] font-mono font-bold uppercase tracking-wider text-[#04509A]">
               Laser Screed Specialists
             </span>
           </div>
