@@ -21,7 +21,7 @@ export interface HeroSlide {
 const HERO_SLIDES: HeroSlide[] = [
   {
     id: "laser-screed",
-    image: "/images/hero-screed.jpg",
+    image: "/images/hero-screed.webp",
     badge: "Somero S-158C Technology",
     titlePrefix: "HIGH-PRECISION",
     titleHighlight: "LASER SCREED",
@@ -36,7 +36,7 @@ const HERO_SLIDES: HeroSlide[] = [
   },
   {
     id: "polished-finish",
-    image: "/images/hero-polished.jpg",
+    image: "/images/hero-polished.webp",
     badge: "Husqvarna Ride-On Trowels",
     titlePrefix: "DUST-PROOF &",
     titleHighlight: "POLISHED CONCRETE",
@@ -51,13 +51,13 @@ const HERO_SLIDES: HeroSlide[] = [
   },
   {
     id: "turnkey-overview",
-    image: "/images/hero-overview.jpg",
+    image: "/images/hero-overview.webp",
     badge: "Turnkey Sub-Base to Certification",
     titlePrefix: "SUPER-FLAT",
     titleHighlight: "WAREHOUSE & PLANT",
     titleSuffix: "FLOORS.",
     description:
-      "Over 60,00,000+ sq. ft. delivered across 16 major industrial projects in Rajasthan, Gujarat & pan-India. Single-source responsibility from engineering to TR34 certification.",
+      "Over 60,00,000+ sq. ft. delivered across 100+ major industrial projects in Rajasthan, Gujarat & pan-India. Single-source responsibility from engineering to TR34 certification.",
     ctaPrimaryText: "REQUEST CONSULTATION",
     ctaPrimaryLink: "/contact",
     ctaSecondaryText: "SEE PROJECTS",
@@ -66,7 +66,7 @@ const HERO_SLIDES: HeroSlide[] = [
   },
   {
     id: "renew-project",
-    image: "https://www.gangadharconcretesolution.com/images/renew1.jpg",
+    image: "/images/renew_power_dholera.webp",
     badge: "10,00,000 Sq. Ft. Landmark Project",
     titlePrefix: "BUILT FOR",
     titleHighlight: "RENEW POWER",

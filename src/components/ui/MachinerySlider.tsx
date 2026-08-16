@@ -17,28 +17,28 @@ const MACHINERY: MachineItem[] = [
     model: "S-158C / S-485",
     role: "Precision Concrete Leveling & Placement",
     specs: ["1,200 m² daily pour capacity", "TR34 FM1/FM2 Tolerance", "Automatic Laser Elevation Control"],
-    image: "/images/hero-screed.jpg",
+    image: "/images/hero-screed.webp",
   },
   {
     name: "Husqvarna Ride-On Power Trowel",
     model: "CRT 36-26A",
     role: "Heavy-Duty Mirror Finishing & Polishing",
     specs: ["Dual 36-inch rotor diameter", "High RPM burnishing", "Optimum flatness compaction"],
-    image: "/images/hero-polished.jpg",
+    image: "/images/hero-polished.webp",
   },
   {
     name: "Husqvarna Walk-Behind Trowel",
     model: "MCT 36-5",
     role: "Edge & Detail Surface Finishing",
     specs: ["Precision blade pitch control", "Heavy-duty gear transmission", "Smooth perimeter edge work"],
-    image: "/images/hero-overview.jpg",
+    image: "/images/hero-overview.webp",
   },
   {
     name: "Semi-Mechanized Hardener Spreader",
     model: "GCS Topping Spreader",
     role: "Dry-Shake Floor Hardener Application",
     specs: ["3.5 – 4.0 kg/m² uniform rate", "Eliminates hardener clumping", "Enhanced abrasion resistance"],
-    image: "https://www.gangadharconcretesolution.com/images/glry4.jpg",
+    image: "/images/armour_joint_dowel.webp",
   },
 ];
 

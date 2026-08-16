@@ -53,7 +53,7 @@ export default function ProjectsPageClient() {
                   </div>
                   <div className="flex items-center gap-2 bg-slab-white/10 px-3 py-1 rounded-[2px] border border-slab-white/15">
                     <Award className="w-3.5 h-3.5 text-screed-blue" />
-                    <span>16+ Major Industrial Slabs</span>
+                    <span>100+ Major Industrial Slabs</span>
                   </div>
                   <div className="flex items-center gap-2 bg-slab-white/10 px-3 py-1 rounded-[2px] border border-slab-white/15">
                     <ShieldCheck className="w-3.5 h-3.5 text-safety-amber" />
@@ -79,7 +79,7 @@ export default function ProjectsPageClient() {
               <ScrollReveal variant="slide-right" delay={0.2}>
                 <div className="relative w-full h-64 md:h-80 rounded-[4px] overflow-hidden border-2 border-screed-blue/50 shadow-2xl bg-ink-navy group">
                   <img
-                    src="/images/project_hero_banner.png"
+                    src="/images/project_hero_banner.webp"
                     alt="GCS Completed Superflat Warehouse Project"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
@@ -106,7 +106,7 @@ export default function ProjectsPageClient() {
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             <StatBlock value="60,00,000+" label="sq. ft. total area delivered" theme="light" />
-            <StatBlock value="16+" label="completed major industrial projects" theme="light" />
+            <StatBlock value="100+" label="completed major industrial projects" theme="light" />
             <StatBlock value="7+" label="states & industrial hubs across India" theme="light" />
           </div>
         </div>

@@ -7,15 +7,15 @@ import { GalleryLightbox } from "@/components/ui/GalleryLightbox";
 
 const GALLERY_PANELS = [
   {
-    url: "/images/hero-polished.jpg",
+    url: "/images/hero-polished.webp",
     title: "High-Gloss Mirror Polished Warehouse Floor",
   },
   {
-    url: "/images/hero-overview.jpg",
-    title: "Laser Screeding & Concrete Finishing Crew",
+    url: "/images/mewar_industries.webp",
+    title: "Ride-On Power Trowel Concrete Finishing Pass",
   },
   {
-    url: "https://www.gangadharconcretesolution.com/images/glry3.jpg",
+    url: "/images/vna_superflat_warehouse.webp",
     title: "High-Bay Logistics Warehouse Slab Execution",
   },
 ];
@@ -31,7 +31,7 @@ export function MockupHero() {
       */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img
-          src="/images/hero-screed.jpg"
+          src="/images/hero-screed.webp"
           alt="Somero FM2 Laser Screed Machine on Job Site"
           className="w-full h-full object-cover object-center"
         />

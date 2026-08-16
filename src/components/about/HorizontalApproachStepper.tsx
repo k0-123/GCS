@@ -22,7 +22,7 @@ const steps: ApproachStep[] = [
     subtitle: "Level Survey & Plate Bearing Testing",
     desc: "Our engineers visit the site and carry out a digital level survey along with a plate bearing test (1 test per 2,000 m² of floor area) to confirm the sub-base is prepared to the exact tolerance and properly compacted.",
     highlights: ["Digital level survey across total site grid", "Plate bearing test at 2,000 m² intervals", "Sub-base compaction level & grade verification"],
-    image: "/images/card_testing_certification.png",
+    image: "/images/card_testing_certification.webp",
     standard: "ASTM E 1155 Sub-Base Standard",
   },
   {
@@ -31,7 +31,7 @@ const steps: ApproachStep[] = [
     subtitle: "200-Micron LDPE Friction Reduction",
     desc: "A 200-micron LDPE slip membrane is installed across the entire slab footprint to reduce sub-base friction during concrete curing, drastically lowering the risk of unplanned drying shrinkage cracks.",
     highlights: ["200-micron LDPE sheet layout", "Friction coefficient minimization", "Sub-grade moisture protection"],
-    image: "/images/card_laser_screed.png",
+    image: "/images/card_laser_screed.webp",
     standard: "TR34 Slab Shrinkage Protocol",
   },
   {
@@ -40,7 +40,7 @@ const steps: ApproachStep[] = [
     subtitle: "Armour Joints & Plate Dowels",
     desc: "Adjustable timber formwork with L-angle profiles is aligned alongside heavy-duty steel Armour Joints at high-traffic construction joints. 6mm ABS diamond plate dowel sleeves (100×100mm @ 450mm c/c) are fixed for load transfer.",
     highlights: ["Steel Armour Joint placement", "6mm ABS diamond dowel sleeves @ 450mm c/c", "Zero vertical differential deflection"],
-    image: "/images/armour_joint_dowel.png",
+    image: "/images/armour_joint_dowel.webp",
     standard: "EN 10277-1 & EN 10025-2",
   },
   {
@@ -49,7 +49,7 @@ const steps: ApproachStep[] = [
     subtitle: "Column & Wall Restraint Elimination",
     desc: "Locally sourced steel reinforcement is laid per design specs. Compressible isolation joint materials (10mm for walls, 20mm for columns) are fixed to prevent structural restraint during slab expansion.",
     highlights: ["10mm compressible wall isolation", "20mm column boundary isolation", "Steel rebar / SFRC mesh positioning"],
-    image: "/images/card_sfrc_flooring.png",
+    image: "/images/card_sfrc_flooring.webp",
     standard: "TR34 Isolation Joint Code",
   },
   {
@@ -58,7 +58,7 @@ const steps: ApproachStep[] = [
     subtitle: "Somero S-158C Laying & Hardener Spreading",
     desc: "Concrete slump and temperature are verified on site. The Somero S-158C laser screed levels, vibrates, and compacts concrete in a single pass (up to 1,200 m²/day), followed by non-metallic hardener (3.5–4 kg/m²) via semi-mechanized spreader.",
     highlights: ["Somero S-158C 3D laser levelling", "Up to 1,200 m²/day pouring speed", "3.5–4.0 kg/m² non-metallic hardener"],
-    image: "/images/gcs_team_somero.jpg",
+    image: "/images/gcs_team_somero.webp",
     standard: "TR34 Wide-Bay Standard",
   },
   {
@@ -67,7 +67,7 @@ const steps: ApproachStep[] = [
     subtitle: "Husqvarna Ride-On Burnishing & Sawing",
     desc: "Our experienced finishing team completes the slab using Husqvarna CRT36 ride-on and MCT 36-5 walk-behind power trowels for high-density burnishing, followed by early-entry saw-cutting for contraction joints.",
     highlights: ["Husqvarna CRT36 ride-on power trowelling", "High-gloss densified finish", "Early-entry saw-cut contraction joints"],
-    image: "/images/concrete_power_trowel.png",
+    image: "/images/concrete_power_trowel.webp",
     standard: "ROT High-Density Burnish",
   },
   {
@@ -76,7 +76,7 @@ const steps: ApproachStep[] = [
     subtitle: "Independent Chartered Engineer Sign-Off",
     desc: "Independent third-party chartered engineers perform full Dipstick / F-meter profile scanning, delivering certified TR34 FM1, FM2, or DM1 documentation for facility handover.",
     highlights: ["Dipstick / F-meter profile scanning", "Property E & F metrics calculation", "Third-party chartered engineer sign-off"],
-    image: "/images/card_vna_flooring.png",
+    image: "/images/card_vna_flooring.webp",
     standard: "TR34 4th Edition Certified",
   },
 ];

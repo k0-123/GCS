@@ -84,8 +84,10 @@ function AboutSnippet() {
             />
             <ScrollReveal variant="fade-up" delay={0.2}>
               <p className="text-[#475569] text-[17px] leading-[1.7] mb-5 font-normal">
-                Gangadhar Concrete Solution (GCS) was founded by young entrepreneur{" "}
-                <strong className="text-[#04509A] font-bold">Manoj Choudhary</strong> with a single mission: bring international-standard, value-engineered concrete flooring solutions to India&apos;s industrial and warehousing sector.
+                Gangadhar Concrete Solution (GCS) was founded by young entrepreneurs{" "}
+                <strong className="text-[#04509A] font-bold">Manoj Choudhary</strong> and{" "}
+                <strong className="text-[#04509A] font-bold">Kailash Choudhary</strong>{" "}
+                with a single mission: bring international-standard, value-engineered concrete flooring solutions to India&apos;s industrial and warehousing sector.
               </p>
               <p className="text-[#475569] text-[17px] leading-[1.7] mb-5">
                 We are among India&apos;s fastest-growing concrete flooring solution providers, working strictly to global benchmarks — the{" "}
@@ -121,14 +123,14 @@ function AboutSnippet() {
             <ScrollReveal variant="slide-right" delay={0.3}>
               <div className="relative h-72 sm:h-80 overflow-hidden rounded-2xl border-2 border-[#04509A] bg-[#0B2F4A] group shadow-xl">
                 <img
-                  src="/images/gcs_team_somero.jpg"
-                  alt="GCS Founders & Engineers with Somero S-158C Laser Screed Machine"
+                  src="/images/gcs_team_somero.webp"
+                  alt="Manoj Choudhary & Kailash Choudhary with Somero S-158C Laser Screed Machine"
                   className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0B2F4A]/90 via-transparent to-transparent" />
                 <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
                   <div className="bg-[#0B2F4A]/90 backdrop-blur-md px-3 py-1.5 text-[12px] font-mono text-white rounded-lg border border-white/20 font-bold">
-                    GCS Team & Somero S-158C Machine
+                    Manoj Choudhary & Kailash Choudhary
                   </div>
                   <span className="text-[11px] font-mono bg-amber-500 text-slate-900 font-black px-2.5 py-1 rounded">
                     Jaipur HQ
@@ -284,7 +286,7 @@ function WhyGCS() {
                   theme="light"
                 />
                 <StatBlock
-                  value="16"
+                  value="100+"
                   label="industrial and warehousing projects delivered pan-India"
                   suffix=""
                   theme="light"
@@ -405,7 +407,7 @@ function ProofStrip() {
           <div className="space-y-1">
             <div className="h-[3px] w-10 bg-screed-blue rounded-full mb-3 mx-auto md:mx-0" />
             <div className="font-display font-black text-[32px] sm:text-[42px] lg:text-[48px] text-slab-white tracking-tight leading-none">
-              16+
+              100+
             </div>
             <p className="font-mono text-[13px] text-slab-white/70 uppercase tracking-[0.5px]">
               completed industrial projects

@@ -102,7 +102,7 @@ export default function AboutPageClient() {
               <ScrollReveal variant="slide-right" delay={0.2}>
                 <div className="relative w-full h-64 md:h-80 rounded-[4px] overflow-hidden border-2 border-screed-blue/50 shadow-2xl bg-ink-navy group">
                   <img
-                    src="/images/about_hero_banner.png"
+                    src="/images/about_hero_banner.webp"
                     alt="Gangadhar Concrete Solution Engineering Team"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
@@ -138,7 +138,7 @@ export default function AboutPageClient() {
                   Engineered Excellence from Jaipur to Pan-India
                 </h2>
                 <p className="text-graphite text-[16px] md:text-[17px] leading-[1.7]">
-                  Gangadhar Concrete Solution was founded by <strong className="text-ink-navy font-semibold">Manoj Choudhary</strong>, a young entrepreneur determined to bring a higher level of professionalism and quality standards to concrete flooring in Rajasthan and across India.
+                  Gangadhar Concrete Solution was founded by <strong className="text-ink-navy font-semibold">Manoj Choudhary</strong> and <strong className="text-ink-navy font-semibold">Kailash Choudhary</strong>, visionary entrepreneurs determined to bring a higher level of professionalism and quality standards to concrete flooring in Rajasthan and across India.
                 </p>
                 <p className="text-graphite text-[16px] md:text-[17px] leading-[1.7]">
                   We operate in strict accordance with international codes — the <strong className="text-ink-navy font-semibold">TR34 (4th edition)</strong> from the UK Concrete Society, <strong className="text-ink-navy font-semibold">American ASTM E1155</strong>, and <strong className="text-ink-navy font-semibold">DIN codes</strong> — which govern surface regularity for free-movement and defined-movement warehouse floors.
@@ -154,17 +154,17 @@ export default function AboutPageClient() {
               <ScrollReveal variant="slide-right" delay={0.2}>
                 <div className="relative w-full rounded-[4px] overflow-hidden border border-concrete-grey shadow-lg bg-ink-navy group">
                   <img
-                    src="/images/gcs_team_somero.jpg"
-                    alt="GCS Founders & Team with Somero S-158C Machine"
+                    src="/images/gcs_team_somero.webp"
+                    alt="Manoj Choudhary & Kailash Choudhary with Somero S-158C Machine"
                     className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-102"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink-navy/90 via-transparent to-transparent opacity-80" />
                   <div className="absolute bottom-4 left-4 right-4 text-slab-white">
                     <div className="font-display font-bold text-[16px] text-safety-amber">
-                      GCS Leadership Team & Somero S-158C
+                      Manoj Choudhary & Kailash Choudhary
                     </div>
                     <div className="text-[13px] text-slab-white/80 font-mono">
-                      Manoj Choudhary (Founder) & Kailash Pali with Site Engineers
+                      Founders with Somero S-158C Laser Screed Machine & Site Team
                     </div>
                   </div>
                 </div>
@@ -182,7 +182,7 @@ export default function AboutPageClient() {
                 {/* Deliverables Stat Blocks */}
                 <div className="grid grid-cols-2 gap-4 mt-4">
                   <StatBlock value="60,00,000+" label="sq. ft. delivered" theme="light" />
-                  <StatBlock value="16+" label="major projects completed" theme="light" />
+                  <StatBlock value="100+" label="major projects completed" theme="light" />
                 </div>
               </ScrollReveal>
             </div>

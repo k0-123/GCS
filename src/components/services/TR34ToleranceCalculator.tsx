@@ -75,7 +75,7 @@ export function TR34ToleranceCalculator() {
             <div className="lg:col-span-7 space-y-6">
               <div className="relative w-full h-48 md:h-56 rounded-[3px] overflow-hidden border border-slab-white/15 bg-ink-navy shadow-inner">
                 <img
-                  src="/images/vna_superflat_warehouse.png"
+                  src="/images/vna_superflat_warehouse.webp"
                   alt="TR34 Warehouse Floor Flatness"
                   className="w-full h-full object-cover opacity-90 transition-transform duration-500 hover:scale-105"
                 />

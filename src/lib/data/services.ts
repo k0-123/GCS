@@ -85,7 +85,7 @@ export const services: Service[] = [
     title: "Laser Screed Flooring (FM1/FM2 Grade)",
     pageHeading: "Laser Screed Flooring — FM1/FM2 Grade",
     specChip: "FM1 · F 1.8",
-    image: `${BASE_URL}/images/laser.jpg`,
+    image: `${BASE_URL}/images/laser.webp`,
     metaTitle: "Laser Screed Flooring FM1/FM2 | Gangadhar Concrete Solution, Jaipur",
     metaDescription: "Precision FM1/FM2 laser screed flooring for warehouses and industrial units — laid to TR34 standards using Somero laser screed technology.",
     description: [
@@ -162,7 +162,7 @@ export const services: Service[] = [
     title: "Steel Fiber Reinforced Concrete (SFRC) Flooring",
     pageHeading: "Steel Fiber Reinforced Concrete Flooring",
     specChip: "SFRC · High-Load",
-    image: `${BASE_URL}/images/abt1.jpg`,
+    image: `${BASE_URL}/images/abt1.webp`,
     metaTitle: "Steel Fiber Reinforced Concrete Flooring | Gangadhar Concrete Solution",
     metaDescription: "High load-bearing steel fiber reinforced concrete (SFRC) flooring that reduces cracking and increases floor durability for demanding industrial areas.",
     description: [
@@ -187,7 +187,7 @@ export const services: Service[] = [
     title: "Jointless Floors",
     pageHeading: "Jointless Floors",
     specChip: "Jointless · Low Maintenance",
-    image: `${BASE_URL}/images/main01.jpg`,
+    image: `${BASE_URL}/images/main01.webp`,
     metaTitle: "Jointless Concrete Floors | Gangadhar Concrete Solution",
     metaDescription: "Jointless concrete flooring for smooth, high-load operation with very few joints — reducing maintenance and improving long-term floor performance.",
     description: [
@@ -212,7 +212,7 @@ export const services: Service[] = [
     title: "Concrete Polishing & Densification",
     pageHeading: "Concrete Polishing & Densification",
     specChip: "Dust-Proof · Reflective",
-    image: `${BASE_URL}/images/polish22.jpg`,
+    image: `${BASE_URL}/images/polish22.webp`,
     metaTitle: "Concrete Polishing & Densification | Gangadhar Concrete Solution",
     metaDescription: "Dust-proof, slip-resistant, low-maintenance concrete polishing and densification for industrial and commercial floors.",
     description: [
@@ -237,7 +237,7 @@ export const services: Service[] = [
     title: "Epoxy Flooring",
     pageHeading: "Epoxy Flooring — Seamless Protection for Demanding Environments",
     specChip: "Epoxy · Chemical-Resistant",
-    image: `${BASE_URL}/images/color.jpg`,
+    image: `${BASE_URL}/images/color.webp`,
     metaTitle: "Epoxy Flooring Services | Gangadhar Concrete Solution",
     metaDescription: "Seamless, durable epoxy flooring solutions for industrial and commercial spaces requiring hygienic, chemical-resistant surfaces.",
     description: [
@@ -353,13 +353,13 @@ export const services: Service[] = [
 ];
 
 export const serviceOverview = [
-  { title: "Laser Screed Flooring (FM1/FM2 Grade)", description: "Ultra-flat, super-level floors for free-movement warehousing and industrial areas.", slug: "laser-screed", specChip: "FM1 · F 1.8", image: "/images/card_laser_screed.png" },
-  { title: "VNA Flooring (DM1/DM2 Category)", description: "High-precision floors for very-narrow-aisle racking systems up to 12–13m lift height.", slug: "vna-flooring", specChip: "DM1 · 12–13m", image: "/images/card_vna_flooring.png" },
-  { title: "Armour Joints & Dowel Sleeves", description: "Heavy-duty load transfer joint systems for warehouse slabs and industrial floors.", slug: "specialty-joints", specChip: "EN 10277 · TR34", image: "/images/card_armour_joints.png" },
-  { title: "Steel Fiber Reinforced Concrete Flooring", description: "High load-bearing floors engineered to resist cracking in demanding-duty areas.", slug: "sfrc", specChip: "SFRC · High-Load", image: "/images/card_sfrc_flooring.png" },
-  { title: "Jointless Floors", description: "Fewer joints, smoother operation, and lower long-term maintenance.", slug: "jointless", specChip: "Jointless", image: "/images/card_jointless_flooring.png" },
-  { title: "Concrete Polishing & Densification", description: "Dust-proof, slip-resistant, low-maintenance finishes that last.", slug: "polishing-densification", specChip: "Dust-Proof", image: "/images/card_concrete_polishing.png" },
-  { title: "Testing & Certification", description: "Third-party chartered engineer testing and FM/DM certification to TR34 code.", slug: "testing-certification", specChip: "TR34", image: "/images/card_testing_certification.png" },
+  { title: "Laser Screed Flooring (FM1/FM2 Grade)", description: "Ultra-flat, super-level floors for free-movement warehousing and industrial areas.", slug: "laser-screed", specChip: "FM1 · F 1.8", image: "/images/card_laser_screed.webp" },
+  { title: "VNA Flooring (DM1/DM2 Category)", description: "High-precision floors for very-narrow-aisle racking systems up to 12–13m lift height.", slug: "vna-flooring", specChip: "DM1 · 12–13m", image: "/images/card_vna_flooring.webp" },
+  { title: "Armour Joints & Dowel Sleeves", description: "Heavy-duty load transfer joint systems for warehouse slabs and industrial floors.", slug: "specialty-joints", specChip: "EN 10277 · TR34", image: "/images/card_armour_joints.webp" },
+  { title: "Steel Fiber Reinforced Concrete Flooring", description: "High load-bearing floors engineered to resist cracking in demanding-duty areas.", slug: "sfrc", specChip: "SFRC · High-Load", image: "/images/card_sfrc_flooring.webp" },
+  { title: "Jointless Floors", description: "Fewer joints, smoother operation, and lower long-term maintenance.", slug: "jointless", specChip: "Jointless", image: "/images/card_jointless_flooring.webp" },
+  { title: "Concrete Polishing & Densification", description: "Dust-proof, slip-resistant, low-maintenance finishes that last.", slug: "polishing-densification", specChip: "Dust-Proof", image: "/images/card_concrete_polishing.webp" },
+  { title: "Testing & Certification", description: "Third-party chartered engineer testing and FM/DM certification to TR34 code.", slug: "testing-certification", specChip: "TR34", image: "/images/card_testing_certification.webp" },
 ];
 
 export function getServiceBySlug(slug: string): Service | undefined {
@@ -390,7 +390,7 @@ export const machineryFleet: MachineryItem[] = [
       "Achieves strict TR34 4th Edition tolerances",
       "Zero manual levelling errors",
     ],
-    image: "/images/laser_screed_machinery.png",
+    image: "/images/laser_screed_machinery.webp",
   },
   {
     id: "husqvarna-crt36",
@@ -411,7 +411,7 @@ export const machineryFleet: MachineryItem[] = [
       "Reduces slab finishing time on 1,000+ m² daily pours",
       "Ideal for non-metallic hardener integration",
     ],
-    image: "/images/concrete_power_trowel.png",
+    image: "/images/concrete_power_trowel.webp",
   },
   {
     id: "husqvarna-mct36-5",
@@ -432,7 +432,7 @@ export const machineryFleet: MachineryItem[] = [
       "Smooth handle vibration dampening for operator accuracy",
       "High maneuverability in tight warehouse bays",
     ],
-    image: "/images/concrete_power_trowel.png",
+    image: "/images/concrete_power_trowel.webp",
   },
   {
     id: "hardener-spreader",
@@ -453,7 +453,7 @@ export const machineryFleet: MachineryItem[] = [
       "Prevents surface dusting and spalling",
       "Dramatically improves forklift wheel wear resistance",
     ],
-    image: "/images/laser_screed_machinery.png",
+    image: "/images/laser_screed_machinery.webp",
   },
   {
     id: "laser-levellers",
@@ -474,7 +474,7 @@ export const machineryFleet: MachineryItem[] = [
       "Verifies levelness during extreme 1,200m² single-day pours",
       "Eliminates slope deviations across long warehouse aisles",
     ],
-    image: "/images/vna_superflat_warehouse.png",
+    image: "/images/vna_superflat_warehouse.webp",
   },
 ];
 

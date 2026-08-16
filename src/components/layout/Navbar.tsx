@@ -57,7 +57,7 @@ export function Navbar() {
             {/* Official GCS High-Res Logo Asset */}
             <div className="h-9 sm:h-11 md:h-12 w-auto flex items-center justify-center">
               <img
-                src="/images/gcs-logo.png"
+                src="/images/gcs-logo.webp"
                 alt="GCS Laser Screed Flooring Solutions"
                 className="h-full w-auto object-contain"
               />

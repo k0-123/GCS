@@ -62,7 +62,7 @@ export function JointMechanicsVisualizer() {
             <div className="lg:col-span-7 space-y-6">
               <div className="relative w-full h-52 md:h-60 rounded-[3px] overflow-hidden border border-concrete-grey bg-ink-navy shadow-inner">
                 <img
-                  src="/images/armour_joint_dowel.png"
+                  src="/images/armour_joint_dowel.webp"
                   alt={currentJoint.title}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
