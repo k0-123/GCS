@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/Button";
 import { SectionDivider } from "@/components/ui/SectionDivider";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { StatBlock } from "@/components/ui/StatBlock";
+import { GalleryLightbox } from "@/components/ui/GalleryLightbox";
 import { ScrollReveal, StaggerContainer, StaggerItem } from "@/components/animations/ScrollReveal";
 import { projects, sectorLabels, type Project, galleryImages } from "@/lib/data/projects";
 import { cn } from "@/lib/utils";
@@ -14,6 +15,7 @@ type SectorFilter = "all" | Project["sector"];
 
 export default function ProjectsPageClient() {
   const [filter, setFilter] = useState<SectorFilter>("all");
+  const [selectedGalleryIndex, setSelectedGalleryIndex] = useState<number | null>(null);
 
   const filteredProjects =
     filter === "all" ? projects : projects.filter((p) => p.sector === filter);
@@ -83,12 +85,12 @@ export default function ProjectsPageClient() {
                     alt="GCS Completed Superflat Warehouse Project"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink-navy/90 via-transparent to-transparent" />
-                  <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-slab-white text-[12px] font-mono">
-                    <span className="bg-ink-navy/90 backdrop-blur-md px-3 py-1.5 rounded border border-slab-white/20 font-bold text-safety-amber">
-                      Renew Power 1,000,000 Sq. Ft. Project
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink-navy/95 via-ink-navy/30 to-transparent" />
+                  <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 flex flex-wrap items-center justify-between gap-2 text-slab-white text-[11px] sm:text-[12px] font-mono">
+                    <span className="bg-ink-navy/95 backdrop-blur-md px-2.5 py-1 sm:px-3 sm:py-1.5 rounded border border-slab-white/20 font-bold text-safety-amber">
+                      Renew Power 1,000,000 Sq. Ft.
                     </span>
-                    <span className="bg-screed-blue px-2.5 py-1 rounded font-bold uppercase">
+                    <span className="bg-screed-blue px-2 py-0.5 sm:px-2.5 sm:py-1 rounded font-bold uppercase shrink-0">
                       TR34 FM1
                     </span>
                   </div>
@@ -102,9 +104,9 @@ export default function ProjectsPageClient() {
       <SectionDivider from="navy" to="white" />
 
       {/* Stats Strip */}
-      <section className="bg-slab-white py-12 md:py-16">
+      <section className="bg-slab-white py-10 md:py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             <StatBlock value="60,00,000+" label="sq. ft. total area delivered" theme="light" />
             <StatBlock value="100+" label="completed major industrial projects" theme="light" />
             <StatBlock value="7+" label="states & industrial hubs across India" theme="light" />
@@ -115,26 +117,26 @@ export default function ProjectsPageClient() {
       <SectionDivider from="white" to="grey" />
 
       {/* Projects Cards Grid */}
-      <section className="bg-concrete-grey py-16 md:py-24">
+      <section className="bg-concrete-grey py-14 md:py-24">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
             <div>
               <span className="font-mono text-screed-blue text-[13px] uppercase tracking-[1px] bg-screed-blue/10 px-3.5 py-1 rounded-[2px] border border-screed-blue/20 font-semibold mb-2 inline-block">
                 Project Directory
               </span>
-              <h2 className="text-ink-navy text-[28px] md:text-[36px] font-display font-black">
+              <h2 className="text-ink-navy text-[26px] sm:text-[28px] md:text-[36px] font-display font-black">
                 Verified Industrial Slabs
               </h2>
             </div>
 
             {/* Sector Filters */}
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-1.5 sm:gap-2">
               {sectors.map((s) => (
                 <button
                   key={s}
                   onClick={() => setFilter(s)}
                   className={cn(
-                    "px-3.5 py-1.5 text-[13px] font-display font-bold rounded-[2px] transition-all",
+                    "px-3 py-1.5 text-[12px] sm:text-[13px] font-display font-bold rounded-[2px] transition-all",
                     filter === s
                       ? "bg-ink-navy text-slab-white shadow"
                       : "bg-slab-white text-graphite border border-concrete-grey hover:bg-concrete-grey/60"
@@ -149,7 +151,7 @@ export default function ProjectsPageClient() {
           {/* Project Cards Grid with high-res photography */}
           <StaggerContainer
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-            staggerDelay={0.06}
+            staggerDelay={0.05}
             key={filter}
           >
             {filteredProjects.map((project, i) => (
@@ -161,20 +163,21 @@ export default function ProjectsPageClient() {
                     <img
                       src={project.image}
                       alt={project.client}
+                      loading="lazy"
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-ink-navy/70 via-transparent to-transparent opacity-80" />
-                    <div className="absolute top-3 right-3 bg-ink-navy/90 backdrop-blur-sm px-2.5 py-1 text-[11px] font-mono text-safety-amber font-bold rounded-[2px] border border-slab-white/10">
+                    <div className="absolute inset-0 bg-gradient-to-t from-ink-navy/80 via-transparent to-transparent opacity-90" />
+                    <div className="absolute top-3 right-3 bg-ink-navy/95 backdrop-blur-sm px-2.5 py-1 text-[11px] font-mono text-safety-amber font-bold rounded-[2px] border border-slab-white/10 shadow-sm">
                       {sectorLabels[project.sector]}
                     </div>
                   </div>
 
-                  <div className="p-6 flex-1 flex flex-col justify-between">
+                  <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between">
                     <div>
-                      <h3 className="font-display font-bold text-ink-navy text-[18px] mb-3 leading-snug">
+                      <h3 className="font-display font-bold text-ink-navy text-[17px] sm:text-[18px] mb-2 sm:mb-3 leading-snug">
                         {project.client}
                       </h3>
-                      <div className="flex items-center gap-2 text-graphite text-[14px] mb-2">
+                      <div className="flex items-center gap-2 text-graphite text-[13px] sm:text-[14px] mb-2">
                         <MapPin className="w-4 h-4 text-screed-blue shrink-0" strokeWidth={1.5} />
                         <span>{project.location}</span>
                       </div>
@@ -183,7 +186,7 @@ export default function ProjectsPageClient() {
                     <div className="mt-4 pt-4 border-t border-concrete-grey flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <Maximize2 className="w-4 h-4 text-safety-amber shrink-0" strokeWidth={1.5} />
-                        <span className="font-mono text-[14px] font-bold text-screed-blue">
+                        <span className="font-mono text-[13px] sm:text-[14px] font-bold text-screed-blue">
                           {project.area}
                         </span>
                       </div>
@@ -207,7 +210,7 @@ export default function ProjectsPageClient() {
       <SectionDivider from="grey" to="white" />
 
       {/* Gallery Section */}
-      <section className="bg-slab-white py-16 md:py-24">
+      <section className="bg-slab-white py-14 md:py-24">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <SectionHeading
             eyebrow="On-Site Evidence"
@@ -215,18 +218,22 @@ export default function ProjectsPageClient() {
             description="Verified photography from GCS industrial concrete flooring sites across India."
             align="center"
           />
-          <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" staggerDelay={0.06}>
+          <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" staggerDelay={0.05}>
             {galleryImages.map((img, i) => (
               <StaggerItem key={i}>
-                <div className="group relative h-60 overflow-hidden rounded-[3px] border border-concrete-grey bg-ink-navy shadow-sm">
+                <div 
+                  onClick={() => setSelectedGalleryIndex(i)}
+                  className="group relative h-56 sm:h-60 overflow-hidden rounded-[3px] border border-concrete-grey bg-ink-navy shadow-sm cursor-pointer"
+                >
                   <img
                     src={img.url}
                     alt={img.title}
+                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink-navy/80 via-transparent to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-4">
-                    <p className="font-display font-bold text-slab-white text-[14px]">
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink-navy/95 via-ink-navy/30 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-3.5 sm:p-4">
+                    <p className="font-display font-bold text-slab-white text-[13px] sm:text-[14px] leading-snug">
                       {img.title}
                     </p>
                   </div>
@@ -236,6 +243,15 @@ export default function ProjectsPageClient() {
           </StaggerContainer>
         </div>
       </section>
+
+      {/* Gallery Lightbox Modal */}
+      {selectedGalleryIndex !== null && (
+        <GalleryLightbox
+          images={galleryImages}
+          initialIndex={selectedGalleryIndex}
+          onClose={() => setSelectedGalleryIndex(null)}
+        />
+      )}
 
       {/* CTA */}
       <section className="bg-concrete-grey py-16 md:py-20 border-t border-concrete-grey">

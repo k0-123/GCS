@@ -25,7 +25,7 @@ export function StatBlock({
   theme = "dark",
 }: StatBlockProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, amount: 0.5 });
+  const isInView = useInView(ref, { once: true, amount: "some" });
   const shouldReduceMotion = useReducedMotion();
   const [displayValue, setDisplayValue] = useState(shouldReduceMotion ? value : "0");
 
@@ -76,7 +76,7 @@ export function StatBlock({
       <div className="w-10 h-[2px] bg-safety-amber mb-4" aria-hidden="true" />
       <div
         className={cn(
-          "font-mono text-[36px] md:text-[48px] font-bold leading-none tracking-tight",
+          "font-mono text-[28px] sm:text-[36px] md:text-[48px] font-bold leading-none tracking-tight",
           theme === "dark" ? "text-slab-white" : "text-ink-navy"
         )}
       >

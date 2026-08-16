@@ -14,7 +14,7 @@ interface ScrollRevealProps {
   /** Duration in seconds */
   duration?: number;
   /** How much of the element should be visible before triggering */
-  threshold?: number;
+  threshold?: number | "some" | "all";
   /** Whether to animate only once */
   once?: boolean;
 }
@@ -48,7 +48,7 @@ export function ScrollReveal({
   variant = "fade-up",
   delay = 0,
   duration = 0.6,
-  threshold = 0.2,
+  threshold = "some",
   once = true,
 }: ScrollRevealProps) {
   const ref = useRef(null);
@@ -97,11 +97,11 @@ const containerVariants: Variants = {
 export function StaggerContainer({
   children,
   className,
-  staggerDelay = 0.1,
+  staggerDelay = 0.08,
   initialDelay = 0,
 }: StaggerContainerProps) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.1 });
+  const isInView = useInView(ref, { once: true, amount: "some" });
 
   return (
     <motion.div
