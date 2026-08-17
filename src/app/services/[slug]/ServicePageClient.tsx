@@ -124,63 +124,65 @@ export default function ServicePageClient({ service }: ServicePageClientProps) {
 
             {/* Right sidebar (1 col) */}
             <div className="lg:col-span-1">
-              {/* Standards Sign-off Box */}
-              <ScrollReveal variant="slide-right" delay={0.15}>
-                <div className="bg-ink-navy text-slab-white p-6 rounded-[3px] mb-6">
-                  <div className="flex items-center gap-2 text-safety-amber font-display font-bold text-[15px] uppercase tracking-[0.5px] mb-3">
-                    <ShieldCheck className="w-5 h-5 text-safety-amber" />
-                    <span>International Compliance</span>
+              <div className="sticky top-28 space-y-6">
+                {/* Standards Sign-off Box */}
+                <ScrollReveal variant="slide-right" delay={0.15}>
+                  <div className="bg-ink-navy text-slab-white p-6 rounded-[3px]">
+                    <div className="flex items-center gap-2 text-safety-amber font-display font-bold text-[15px] uppercase tracking-[0.5px] mb-3">
+                      <ShieldCheck className="w-5 h-5 text-safety-amber" />
+                      <span>International Compliance</span>
+                    </div>
+                    <ul className="space-y-2 text-[13px] text-slab-white/80 font-mono">
+                      <li>• TR34 4th Edition Code</li>
+                      <li>• ASTM E 1155 Levelness</li>
+                      <li>• DIN 18202 Precision</li>
+                      <li>• EN 10025-2 Duraplate</li>
+                    </ul>
                   </div>
-                  <ul className="space-y-2 text-[13px] text-slab-white/80 font-mono">
-                    <li>• TR34 4th Edition Code</li>
-                    <li>• ASTM E 1155 Levelness</li>
-                    <li>• DIN 18202 Precision</li>
-                    <li>• EN 10025-2 Duraplate</li>
-                  </ul>
-                </div>
-              </ScrollReveal>
+                </ScrollReveal>
 
-              {/* Key Benefits */}
-              <ScrollReveal variant="slide-right" delay={0.25}>
-                <div className="bg-concrete-grey/40 p-6 rounded-[3px] border border-concrete-grey mb-6">
-                  <h3 className="font-display font-bold text-ink-navy text-[15px] uppercase tracking-[0.5px] mb-4">
-                    Key Benefits
-                  </h3>
-                  <ul className="space-y-3">
-                    {service.keyBenefits.map((benefit, i) => (
-                      <li key={i} className="flex items-start gap-2.5">
-                        <CheckCircle2 className="w-4 h-4 text-screed-blue shrink-0 mt-0.5" strokeWidth={1.5} />
-                        <span className="text-graphite text-[14px] leading-[1.5]">{benefit}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </ScrollReveal>
+                {/* Key Benefits */}
+                <ScrollReveal variant="slide-right" delay={0.25}>
+                  <div className="bg-concrete-grey/40 p-6 rounded-[3px] border border-concrete-grey">
+                    <h3 className="font-display font-bold text-ink-navy text-[15px] uppercase tracking-[0.5px] mb-4">
+                      Key Benefits
+                    </h3>
+                    <ul className="space-y-3">
+                      {service.keyBenefits.map((benefit, i) => (
+                        <li key={i} className="flex items-start gap-2.5">
+                          <CheckCircle2 className="w-4 h-4 text-screed-blue shrink-0 mt-0.5" strokeWidth={1.5} />
+                          <span className="text-graphite text-[14px] leading-[1.5]">{benefit}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </ScrollReveal>
 
-              {/* Ideal Applications */}
-              <ScrollReveal variant="slide-right" delay={0.35}>
-                <div className="bg-concrete-grey/20 p-6 rounded-[3px] border border-concrete-grey mb-6">
-                  <h3 className="font-display font-bold text-ink-navy text-[15px] uppercase tracking-[0.5px] mb-4">
-                    Target Facilities
-                  </h3>
-                  <ul className="space-y-3">
-                    {service.idealApplications.map((app, i) => (
-                      <li key={i} className="flex items-start gap-2.5">
-                        <Target className="w-4 h-4 text-safety-amber shrink-0 mt-0.5" strokeWidth={1.5} />
-                        <span className="text-graphite text-[14px] leading-[1.5]">{app}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </ScrollReveal>
+                {/* Ideal Applications */}
+                <ScrollReveal variant="slide-right" delay={0.35}>
+                  <div className="bg-concrete-grey/20 p-6 rounded-[3px] border border-concrete-grey">
+                    <h3 className="font-display font-bold text-ink-navy text-[15px] uppercase tracking-[0.5px] mb-4">
+                      Target Facilities
+                    </h3>
+                    <ul className="space-y-3">
+                      {service.idealApplications.map((app, i) => (
+                        <li key={i} className="flex items-start gap-2.5">
+                          <Target className="w-4 h-4 text-safety-amber shrink-0 mt-0.5" strokeWidth={1.5} />
+                          <span className="text-graphite text-[14px] leading-[1.5]">{app}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </ScrollReveal>
 
-              {/* CTA */}
-              <ScrollReveal variant="fade-up" delay={0.45}>
-                <Button href={service.ctaHref} className="w-full justify-center">
-                  {service.cta}
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
-              </ScrollReveal>
+                {/* CTA */}
+                <ScrollReveal variant="fade-up" delay={0.45}>
+                  <Button href={service.ctaHref} className="w-full justify-center">
+                    {service.cta}
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Button>
+                </ScrollReveal>
+              </div>
             </div>
           </div>
         </div>
@@ -203,7 +205,10 @@ export default function ServicePageClient({ service }: ServicePageClientProps) {
       )}
 
       {service.slug === "testing-certification" && (
-        <ExecutionLifecycle />
+        <>
+          <TR34ToleranceCalculator />
+          <ExecutionLifecycle />
+        </>
       )}
 
       {/* ---- Data Tables ---- */}

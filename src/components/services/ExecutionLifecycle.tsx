@@ -11,7 +11,7 @@ export function ExecutionLifecycle() {
   const currentPhase = executionLifecyclePhases.find((p) => p.stepNumber === activeStep) || executionLifecyclePhases[0];
 
   return (
-    <section className="bg-slab-white py-16 md:py-24">
+    <section className="bg-[#F8FAFC] py-16 md:py-24 border-y border-concrete-grey">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12">
