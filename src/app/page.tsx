@@ -85,8 +85,8 @@ function AboutSnippet() {
             <ScrollReveal variant="fade-up" delay={0.2}>
               <p className="text-[#475569] text-[17px] leading-[1.7] mb-5 font-normal">
                 Gangadhar Concrete Solution (GCS) was founded by young entrepreneurs{" "}
-                <strong className="text-[#04509A] font-bold">Manoj Choudhary</strong> and{" "}
-                <strong className="text-[#04509A] font-bold">Kailash Choudhary</strong>{" "}
+                <strong className="text-[#04509A] font-bold">Kailash Choudhary</strong> and{" "}
+                <strong className="text-[#04509A] font-bold">Manoj Choudhary</strong>{" "}
                 with a single mission: bring international-standard, value-engineered concrete flooring solutions to India&apos;s industrial and warehousing sector.
               </p>
               <p className="text-[#475569] text-[17px] leading-[1.7] mb-5">
