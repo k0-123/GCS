@@ -102,9 +102,9 @@ export default function AboutPageClient() {
               <ScrollReveal variant="slide-right" delay={0.2}>
                 <div className="relative w-full h-64 md:h-80 rounded-[4px] overflow-hidden border-2 border-screed-blue/50 shadow-2xl bg-ink-navy group">
                   <img
-                    src="/images/about_hero_banner.webp"
-                    alt="Gangadhar Concrete Solution Engineering Team"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    src="/images/about_hero_mirror_floor.webp"
+                    alt="₹100 note reflected on a mirror-finish polished concrete floor by Gangadhar Concrete Solution"
+                    className="w-full h-full object-cover object-[center_40%] transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink-navy/90 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
