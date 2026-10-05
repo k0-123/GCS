@@ -23,7 +23,6 @@ export interface NavbarServiceItem {
   badge: string;
   desc: string;
   icon: any;
-  image: string;
 }
 
 const navbarServicesList: NavbarServiceItem[] = [
@@ -33,7 +32,6 @@ const navbarServicesList: NavbarServiceItem[] = [
     badge: "FM1 · F 1.8",
     desc: "Somero automated laser screed laying up to 1,200 m²/day to TR34 standards.",
     icon: Ruler,
-    image: "/images/card_laser_screed.webp",
   },
   {
     slug: "vna-flooring",
@@ -41,7 +39,6 @@ const navbarServicesList: NavbarServiceItem[] = [
     badge: "DM1 · 12-13m",
     desc: "Very Narrow Aisle super-flat floors for high-bay warehouse logistics.",
     icon: Maximize2,
-    image: "/images/card_vna_flooring.webp",
   },
   {
     slug: "sfrc",
@@ -49,7 +46,6 @@ const navbarServicesList: NavbarServiceItem[] = [
     badge: "Joint Reduction",
     desc: "Ductile steel fiber reinforced slabs eliminating traditional rebar mesh.",
     icon: ShieldCheck,
-    image: "/images/card_sfrc_flooring.webp",
   },
   {
     slug: "jointless",
@@ -57,7 +53,6 @@ const navbarServicesList: NavbarServiceItem[] = [
     badge: "50m x 50m Bays",
     desc: "Large bay jointless concrete floors minimizing floor maintenance costs.",
     icon: Layers,
-    image: "/images/card_jointless_flooring.webp",
   },
   {
     slug: "polishing-densification",
@@ -65,7 +60,6 @@ const navbarServicesList: NavbarServiceItem[] = [
     badge: "Mirror Gloss",
     desc: "Chemical silicate hardeners & Husqvarna diamond tool burnishing.",
     icon: Sparkles,
-    image: "/images/card_concrete_polishing.webp",
   },
   {
     slug: "epoxy",
@@ -73,7 +67,6 @@ const navbarServicesList: NavbarServiceItem[] = [
     badge: "Chemical Resistant",
     desc: "Seamless, high-impact industrial floor coatings for chemical & food plants.",
     icon: Zap,
-    image: "/images/card_armour_joints.webp",
   },
   {
     slug: "testing-certification",
@@ -81,7 +74,6 @@ const navbarServicesList: NavbarServiceItem[] = [
     badge: "TR34 Certified",
     desc: "Third-party chartered engineer Dipstick scanning & FM sign-off.",
     icon: Award,
-    image: "/images/card_testing_certification.webp",
   },
   {
     slug: "specialty-joints",
@@ -89,7 +81,6 @@ const navbarServicesList: NavbarServiceItem[] = [
     badge: "Load Transfer",
     desc: "Heavy-duty steel Armour Joints & 6mm ABS diamond dowel sleeves.",
     icon: CheckCircle2,
-    image: "/images/armour_joint_dowel.webp",
   },
 ];
 
@@ -173,15 +164,9 @@ export function NavbarServicesSlider({ onClose }: NavbarServicesSliderProps) {
                 className="group relative w-72 shrink-0 bg-slab-white/5 border border-white/15 rounded-[4px] p-4 flex flex-col justify-between hover:bg-slab-white/10 hover:border-screed-blue transition-all duration-200"
               >
                 <div>
-                  {/* Card Image Header */}
-                  <div className="relative h-28 w-full rounded-[3px] overflow-hidden mb-3 bg-ink-navy border border-white/10">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-108"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-ink-navy/80 via-transparent to-transparent opacity-80" />
-                    <span className="absolute top-2 right-2 font-mono text-[10px] bg-ink-navy/90 text-safety-amber px-2 py-0.5 rounded font-bold border border-white/10">
+                  {/* Badge */}
+                  <div className="flex justify-end mb-3">
+                    <span className="font-mono text-[10px] bg-ink-navy/90 text-safety-amber px-2 py-0.5 rounded font-bold border border-white/10">
                       {item.badge}
                     </span>
                   </div>

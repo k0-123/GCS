@@ -85,8 +85,8 @@ function AboutSnippet() {
             <ScrollReveal variant="fade-up" delay={0.2}>
               <p className="text-[#475569] text-[17px] leading-[1.7] mb-5 font-normal">
                 Gangadhar Concrete Solution (GCS) was founded by young entrepreneurs{" "}
-                <strong className="text-[#04509A] font-bold">Manoj Choudhary</strong> and{" "}
-                <strong className="text-[#04509A] font-bold">Kailash Choudhary</strong>{" "}
+                <strong className="text-[#04509A] font-bold">Kailash Choudhary</strong> and{" "}
+                <strong className="text-[#04509A] font-bold">Manoj Choudhary</strong>{" "}
                 with a single mission: bring international-standard, value-engineered concrete flooring solutions to India&apos;s industrial and warehousing sector.
               </p>
               <p className="text-[#475569] text-[17px] leading-[1.7] mb-5">
@@ -360,12 +360,6 @@ function SiteGallery() {
                   alt={img.title}
                   className="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1E293B]/90 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity" />
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <p className="font-display font-bold text-white text-[14px]">
-                    {img.title}
-                  </p>
-                </div>
               </div>
             </StaggerItem>
           ))}
