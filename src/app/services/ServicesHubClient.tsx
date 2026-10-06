@@ -73,9 +73,9 @@ export default function ServicesHubClient() {
               <ScrollReveal variant="slide-right" delay={0.2}>
                 <div className="relative w-full h-64 md:h-80 rounded-[4px] overflow-hidden border-2 border-screed-blue/50 shadow-2xl shadow-ink-navy/50 bg-ink-navy group">
                   <img
-                    src="/images/service_hero_banner.webp"
-                    alt="GCS Industrial Laser Screed Pouring"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    src="/images/site_gallery/glry15.webp"
+                    alt="GCS crew operating a Somero laser screed during a live concrete pour"
+                    className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink-navy/90 via-ink-navy/20 to-transparent" />
                   
