@@ -637,13 +637,13 @@ export const services: Service[] = [
 ];
 
 export const serviceOverview = [
-  { title: "Laser Screed Flooring (FM1/FM2 Grade)", description: "Ultra-flat, super-level floors for free-movement warehousing and industrial areas.", slug: "laser-screed", specChip: "FM1 · F 1.8", image: "/images/card_laser_screed.webp" },
-  { title: "VNA Flooring (DM1/DM2 Category)", description: "High-precision floors for very-narrow-aisle racking systems up to 12–13m lift height.", slug: "vna-flooring", specChip: "DM1 · 12–13m", image: "/images/card_vna_flooring.webp" },
-  { title: "Armour Joints & Dowel Sleeves", description: "Heavy-duty load transfer joint systems for warehouse slabs and industrial floors.", slug: "specialty-joints", specChip: "EN 10277 · TR34", image: "/images/card_armour_joints.webp" },
-  { title: "Steel Fiber Reinforced Concrete Flooring", description: "High load-bearing floors engineered to resist cracking in demanding-duty areas.", slug: "sfrc", specChip: "SFRC · High-Load", image: "/images/card_sfrc_flooring.webp" },
-  { title: "Jointless Floors", description: "Fewer joints, smoother operation, and lower long-term maintenance.", slug: "jointless", specChip: "Jointless", image: "/images/card_jointless_flooring.webp" },
-  { title: "Concrete Polishing & Densification", description: "Dust-proof, slip-resistant, low-maintenance finishes that last.", slug: "polishing-densification", specChip: "Dust-Proof", image: "/images/card_concrete_polishing.webp" },
-  { title: "Testing & Certification", description: "Third-party chartered engineer testing and FM/DM certification to TR34 code.", slug: "testing-certification", specChip: "TR34", image: "/images/card_testing_certification.webp" },
+  { title: "Laser Screed Flooring (FM1/FM2 Grade)", description: "Ultra-flat, super-level floors for free-movement warehousing and industrial areas.", slug: "laser-screed", specChip: "FM1 · F 1.8", image: "/images/site_gallery/glry30.webp" },
+  { title: "VNA Flooring (DM1/DM2 Category)", description: "High-precision floors for very-narrow-aisle racking systems up to 12–13m lift height.", slug: "vna-flooring", specChip: "DM1 · 12–13m", image: "/images/site_gallery/glry11.webp" },
+  { title: "Armour Joints & Dowel Sleeves", description: "Heavy-duty load transfer joint systems for warehouse slabs and industrial floors.", slug: "specialty-joints", specChip: "EN 10277 · TR34", image: "/images/site_gallery/glry8.webp" },
+  { title: "Steel Fiber Reinforced Concrete Flooring", description: "High load-bearing floors engineered to resist cracking in demanding-duty areas.", slug: "sfrc", specChip: "SFRC · High-Load", image: "/images/site_gallery/glry7.webp" },
+  { title: "Jointless Floors", description: "Fewer joints, smoother operation, and lower long-term maintenance.", slug: "jointless", specChip: "Jointless", image: "/images/approach/high_gloss_finish_crew.webp" },
+  { title: "Concrete Polishing & Densification", description: "Dust-proof, slip-resistant, low-maintenance finishes that last.", slug: "polishing-densification", specChip: "Dust-Proof", image: "/images/approach/mirror_floor_note_column.webp" },
+  { title: "Testing & Certification", description: "Third-party chartered engineer testing and FM/DM certification to TR34 code.", slug: "testing-certification", specChip: "TR34", image: "/images/approach/mirror_floor_closeup.webp" },
 ];
 
 export function getServiceBySlug(slug: string): Service | undefined {
