@@ -1,0 +1,309 @@
+{
+ "items": [
+  {
+   "kind": "review",
+   "claim": "\"We developed our website and they did really a wonderful website work including content writing. Our website is showing on first page of google.\"",
+   "source": "Google review, Kabayan Travels, 5★",
+   "url": "https://www.google.com/maps/place/?q=place_id:Focuslink+Tech+Jaipur",
+   "date": "edited Oct 2026",
+   "status": "Check before use",
+   "ad_line": "\"Our website is showing on first page of Google.\" Kabayan Travels",
+   "note": "Kabayan Travels is also a Google Ads account you manage, so Google or buyers may see it as a related-party review. Two reviews come from this name. Confirm it is an arm's-length client before quoting.",
+   "category": "Testimonials"
+  },
+  {
+   "kind": "review",
+   "claim": "\"Great service and professional team. Highly recommend Focuslink Tech!\"",
+   "source": "Google review, Arun Tailor, 5★",
+   "url": null,
+   "date": "Oct 2026",
+   "status": "Public review: ask before naming",
+   "ad_line": "\"Highly recommend Focuslink Tech!\"",
+   "note": null,
+   "category": "Testimonials"
+  },
+  {
+   "kind": "review",
+   "claim": "\"Nice work for graphic and website design, thank you.\"",
+   "source": "Google review, Sohan Parmar, 5★",
+   "url": null,
+   "date": "2023",
+   "status": "Public review: ask before naming",
+   "ad_line": null,
+   "note": "Short and three years old. Weak for ads.",
+   "category": "Testimonials"
+  },
+  {
+   "kind": "rating",
+   "claim": "5.0★ from 5 Google reviews",
+   "source": "Google Maps listing, Jaipur",
+   "url": null,
+   "date": "2026-11-06",
+   "status": "Public: on your site",
+   "ad_line": "5.0★ on Google",
+   "note": "Only 5 reviews. Competitors in Jaipur have a median far higher, so lead with the rating only alongside other proof.",
+   "category": "Ratings"
+  },
+  {
+   "kind": "number",
+   "claim": "focuslinktech.com scores 98/100 performance, 100 SEO, 100 best practices on mobile PageSpeed",
+   "source": "PageSpeed Insights (mobile)",
+   "url": "https://www.focuslinktech.com/",
+   "date": "2026-11-06",
+   "status": "Public: on your site",
+   "ad_line": "Our own site scores 98/100 on Google PageSpeed",
+   "note": "Lab test, re-run before quoting; scores move.",
+   "category": "Hard numbers"
+  },
+  {
+   "kind": "number",
+   "claim": "avontrip.com 97/100, dubaitravelagent.com 96/100, avontourism.com 88/100 mobile performance; all 100 SEO",
+   "source": "PageSpeed Insights (mobile)",
+   "url": "https://avontrip.com/",
+   "date": "2026-11-06",
+   "status": "Check before use",
+   "ad_line": "Client travel sites scoring 96–97/100 on Google PageSpeed",
+   "note": "Confirm with each client before naming them. upfortrip.com scored 70 and is left out.",
+   "category": "Hard numbers"
+  },
+  {
+   "kind": "speed",
+   "claim": "MVP: one core feature, real users, launched in 21 days (Pro MVP in 4–5 weeks)",
+   "source": "focuslinktech.com /mvp-development-company",
+   "url": "https://www.focuslinktech.com/mvp-development-company",
+   "date": "2026-11-06",
+   "status": "Public: on your site",
+   "ad_line": "MVP live in 21 days",
+   "note": null,
+   "category": "Launch times"
+  },
+  {
+   "kind": "speed",
+   "claim": "Websites delivered within 1–2 weeks",
+   "source": "focuslinktech.com /website-design-company",
+   "url": "https://www.focuslinktech.com/website-design-company",
+   "date": "2026-11-06",
+   "status": "Public: on your site",
+   "ad_line": "Website live in 1–2 weeks",
+   "note": null,
+   "category": "Launch times"
+  },
+  {
+   "kind": "speed",
+   "claim": "AI / WhatsApp automations go live in 2–3 weeks",
+   "source": "focuslinktech.com /ai-automation-agency",
+   "url": "https://www.focuslinktech.com/ai-automation-agency",
+   "date": "2026-11-06",
+   "status": "Public: on your site",
+   "ad_line": "WhatsApp automation live in 2–3 weeks",
+   "note": null,
+   "category": "Launch times"
+  },
+  {
+   "kind": "speed",
+   "claim": "Mobile apps delivered within 3–4 weeks",
+   "source": "focuslinktech.com /mobile-app-development-company",
+   "url": "https://www.focuslinktech.com/mobile-app-development-company",
+   "date": "2026-11-06",
+   "status": "Public: on your site",
+   "ad_line": "Android & iOS app in 3–4 weeks",
+   "note": null,
+   "category": "Launch times"
+  },
+  {
+   "kind": "price",
+   "claim": "Websites from ₹19,000 / USD 224; business site ₹27,000 / USD 314; e-commerce from ₹38,000 / USD 449",
+   "source": "focuslinktech.com /website-design-company",
+   "url": "https://www.focuslinktech.com/website-design-company",
+   "date": "2026-11-06",
+   "status": "Public: on your site",
+   "ad_line": "Websites from ₹19,000",
+   "note": "The quote form on the same pages says \"Website projects start from ₹45,000 / $900\". Fix one of them before running price ads.",
+   "category": "Prices"
+  },
+  {
+   "kind": "price",
+   "claim": "MVP from ₹1,15,000 / USD 1,349; AI automation from ₹76,000 / USD 899; mobile apps from ₹3,82,000 / USD 4,499; AI chatbots from ₹11,000/month",
+   "source": "focuslinktech.com home and service pages",
+   "url": "https://www.focuslinktech.com/",
+   "date": "2026-11-06",
+   "status": "Public: on your site",
+   "ad_line": "MVP from ₹1.15 lakh, live in 21 days",
+   "note": null,
+   "category": "Prices"
+  },
+  {
+   "kind": "fact",
+   "claim": "Delivering digital projects since 2019",
+   "source": "focuslinktech.com /about-us",
+   "url": "https://www.focuslinktech.com/about-us",
+   "date": "2026-11-06",
+   "status": "Public: on your site",
+   "ad_line": "Building websites and apps since 2019",
+   "note": null,
+   "category": "Experience & markets"
+  },
+  {
+   "kind": "fact",
+   "claim": "Jaipur HQ with a Dubai partner office; clients in India, UAE, UK, USA, Australia, GCC, Singapore, Malaysia",
+   "source": "focuslinktech.com /about-us",
+   "url": "https://www.focuslinktech.com/about-us",
+   "date": "2026-11-06",
+   "status": "Public: on your site",
+   "ad_line": "Jaipur + Dubai team serving India, UAE, UK and worldwide",
+   "note": "The site lists regions served, not a count of clients or countries.",
+   "category": "Experience & markets"
+  },
+  {
+   "kind": "fact",
+   "claim": "Domain and hosting registered in the client's name",
+   "source": "focuslinktech.com /web-development-company-jaipur",
+   "url": "https://www.focuslinktech.com/web-development-company-jaipur",
+   "date": "2026-11-06",
+   "status": "Public: on your site",
+   "ad_line": "Your domain and hosting, in your name",
+   "note": "A real ownership promise, close to a guarantee.",
+   "category": "Promises"
+  },
+  {
+   "kind": "portfolio",
+   "claim": "Avon Tourism (avontourism.com): booking website for a Dubai tour operator, city tours and private transport",
+   "source": "focuslinktech.com /portfolio",
+   "url": "https://www.focuslinktech.com/portfolio",
+   "date": "2026-11-06",
+   "status": "Public: on your site",
+   "ad_line": null,
+   "note": "No result numbers on the site.",
+   "category": "Portfolio"
+  },
+  {
+   "kind": "portfolio",
+   "claim": "Up For Trip (upfortrip.com): agency platform for tour packages, flights and visa help",
+   "source": "focuslinktech.com /portfolio",
+   "url": "https://www.focuslinktech.com/portfolio",
+   "date": "2026-11-06",
+   "status": "Public: on your site",
+   "ad_line": null,
+   "note": "No result numbers on the site.",
+   "category": "Portfolio"
+  },
+  {
+   "kind": "portfolio",
+   "claim": "Dubai Travel Agent (dubaitravelagent.com): private tour and ticketing platform for a Dubai operator",
+   "source": "focuslinktech.com /portfolio",
+   "url": "https://www.focuslinktech.com/portfolio",
+   "date": "2026-11-06",
+   "status": "Public: on your site",
+   "ad_line": null,
+   "note": null,
+   "category": "Portfolio"
+  },
+  {
+   "kind": "portfolio",
+   "claim": "Avon Trip (avontrip.com): flights, visas and UAE day trips with online booking",
+   "source": "focuslinktech.com /portfolio",
+   "url": "https://www.focuslinktech.com/portfolio",
+   "date": "2026-11-06",
+   "status": "Public: on your site",
+   "ad_line": null,
+   "note": null,
+   "category": "Portfolio"
+  },
+  {
+   "kind": "portfolio",
+   "claim": "Kabayan Travels: travel website named on the Jaipur page as a client",
+   "source": "focuslinktech.com /web-development-company-jaipur",
+   "url": "https://www.focuslinktech.com/web-development-company-jaipur",
+   "date": "2026-11-06",
+   "status": "Check before use",
+   "ad_line": null,
+   "note": "Not on the portfolio page; no URL or result given.",
+   "category": "Portfolio"
+  },
+  {
+   "kind": "portfolio",
+   "claim": "CampaignMind: Focuslink's own AI product, mentioned on the AI automation page",
+   "source": "focuslinktech.com /ai-automation-agency",
+   "url": "https://www.focuslinktech.com/ai-automation-agency",
+   "date": "2026-11-06",
+   "status": "Public: on your site",
+   "ad_line": "We build and run our own AI product",
+   "note": "No usage or result numbers found.",
+   "category": "Portfolio"
+  },
+  {
+   "kind": "number",
+   "claim": "focuslinktech.com: 3,144 Google impressions and 108 clicks in 90 days; 33 of 34 attributed clicks were brand searches",
+   "source": "focuslinktech.com /research",
+   "url": "https://www.focuslinktech.com/research",
+   "date": "Jul–Oct 2026",
+   "status": "Not for ads",
+   "ad_line": null,
+   "note": "Honest research, but it shows low non-brand search traffic. Do not use as a result.",
+   "category": "Hard numbers"
+  },
+  {
+   "kind": "industries",
+   "claim": "Industries: travel (strongest), clinics & dental, coaching, salons, restaurants, hotels, real estate, gyms, CA firms, schools, manufacturing, NGOs",
+   "source": "focuslinktech.com /industries",
+   "url": "https://www.focuslinktech.com/industries",
+   "date": "2026-11-06",
+   "status": "Public: on your site",
+   "ad_line": "Websites and software for travel agencies, clinics and coaching institutes",
+   "note": null,
+   "category": "Experience & markets"
+  }
+ ],
+ "missing": [
+  "Gmail and Google Drive (proposals, contracts, handover and thank-you emails, invoices): no connector in this session",
+  "Your computer (Documents, Downloads, Desktop, FLT project /research and /public images): no folder shared with this session",
+  "Sky Princess Travel: not mentioned anywhere on focuslinktech.com",
+  "Clutch and LinkedIn reviews: not linked from the site and not pulled",
+  "Client results (traffic, rankings, leads): no case study on the site gives numbers"
+ ],
+ "match": [
+  {
+   "city": "Dubai",
+   "theirs": "Mirage Minds: website from 599 AED",
+   "ours": "Websites from ₹19,000 / USD 224 (about AED 820), live in 1–2 weeks, domain in your name",
+   "read": "They win on price. Answer with speed and ownership, not a lower price."
+  },
+  {
+   "city": "Dubai",
+   "theirs": "Digital Gravity / Aun Digital: 100% money-back guarantee",
+   "ours": "No written guarantee yet. Closest: domain and hosting in your name",
+   "read": "Gap. A clear guarantee (for example \"live in 14 days or your deposit back\") would match it."
+  },
+  {
+   "city": "Dubai",
+   "theirs": "United SEO: guaranteed rankings or they work for free",
+   "ours": "Kabayan Travels review: \"showing on first page of Google\" (check first)",
+   "read": "One client quote against a written guarantee. Weak until you have a ranking case study."
+  },
+  {
+   "city": "Dubai",
+   "theirs": "Cheval: website from AED 4,999 + 1 month free SEO",
+   "ours": "Business website from USD 314 / ₹27,000",
+   "read": "Your price is far lower for a comparable package."
+  },
+  {
+   "city": "Dubai",
+   "theirs": "WebCastle: store live in 3 weeks",
+   "ours": "E-commerce from ₹38,000, websites in 1–2 weeks",
+   "read": "You are faster on paper."
+  },
+  {
+   "city": "Dubai + Jaipur",
+   "theirs": "Nobody advertises MVP development",
+   "ours": "MVP live in 21 days from ₹1,15,000",
+   "read": "Open lane. Your strongest unmatched offer."
+  },
+  {
+   "city": "Jaipur",
+   "theirs": "No Jaipur ad that passed the filters makes a real offer",
+   "ours": "Price, launch time and PageSpeed proof",
+   "read": "Any concrete offer stands out in Jaipur."
+  }
+ ],
+ "built": "2026-11-06"
+}
