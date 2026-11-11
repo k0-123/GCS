@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Archivo, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import "./globals.css";
@@ -12,23 +12,26 @@ export const viewport: Viewport = {
   themeColor: "#0B2F4A",
 };
 
-const archivo = Archivo({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+// Fonts are self-hosted (latin subset, downloaded from Google Fonts) so the
+// build does not depend on fetching fonts.googleapis.com at build time.
+const archivo = localFont({
+  src: [{ path: "./fonts/Archivo-Variable-latin.woff2", weight: "400 900", style: "normal" }],
   variable: "--font-archivo",
   display: "swap",
 });
 
-const ibmPlexSans = IBM_Plex_Sans({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+const ibmPlexSans = localFont({
+  src: [{ path: "./fonts/IBMPlexSans-Variable-latin.woff2", weight: "300 700", style: "normal" }],
   variable: "--font-ibm-plex-sans",
   display: "swap",
 });
 
-const ibmPlexMono = IBM_Plex_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
+const ibmPlexMono = localFont({
+  src: [
+    { path: "./fonts/IBMPlexMono-400-latin.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/IBMPlexMono-500-latin.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/IBMPlexMono-600-latin.woff2", weight: "600", style: "normal" },
+  ],
   variable: "--font-ibm-plex-mono",
   display: "swap",
 });
