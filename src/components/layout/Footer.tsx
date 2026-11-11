@@ -122,6 +122,17 @@ export function Footer() {
           <p className="text-slab-white/40 text-[13px]">
             © {new Date().getFullYear()} Gangadhar Concrete Solution. All rights reserved.
           </p>
+          <p className="text-slab-white/40 text-[13px]">
+            Designed &amp; Developed by{" "}
+            <a
+              href="https://focuslinktech.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slab-white/70 hover:text-safety-amber transition-colors"
+            >
+              focuslinktech.com
+            </a>
+          </p>
           <div className="flex items-center gap-6 text-[12px] font-mono text-slab-white/40">
             <span>GSTIN: {contactInfo.gstin}</span>
             <span className="hidden sm:block">UDYAM: {contactInfo.udyam}</span>
